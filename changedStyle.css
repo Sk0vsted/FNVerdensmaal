@@ -1,0 +1,70 @@
+/* ISTEDET FOR AT SKRIVE FØLGENDE */
+    .visually-hidden {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0,0,0,0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+    }
+
+/* SÅ SKAL MAN FJERNE !IMPORTANT */
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+/* --------------------------------------------------*/
+
+
+
+
+/* HUSK AT SKRIVE ALLE FARVE KODERNE I TOPPEN SOM NEDENSTÅENDE */
+
+/* # [Color codes]
+
+# Dark grey (text): #333333
+# Dark Blue (headings, links) #000066
+# Mid Blue (header) #333399
+# Light blue (top navigation) #CCCCFF
+# Mid grey: #666666
+# */
+
+/* Dette er med til at skabe meget mere overskuelighed i CSS filen */
+/* --------------------------------------------------*/
+
+
+
+
+
+/* SAMTIDIG KAN MAN OGSÅ SKRIVE TYOPGRAFIEN I TOPPEN AF CSS DOKUMENTET */
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy:      1.2em/1.6em Verdana, Helvetica, Arial, Geneva, sans-serif;
+Headers:        2.7em/1.3em Helvetica, Arial, "Lucida Sans Unicode", Verdana, sans-serif;
+Input, textarea:    1.1em Helvetica, Verdana, Geneva, Arial, sans-serif;
+Sidebar heading:    1.5em Helvetica, Trebuchet MS, Arial, sans-serif;
+
+Notes:  decreasing heading by 0.4em with every subsequent heading level
+-------------------------------------------------------------------*/
+
+
+
+/* VED ANIMATIONER KAN MAN SKRIVE FØLGENDE I EN KOMMENTAR OVER */
+
+    duration | timing-function | delay | iteration-count
+    direction | fill-mode | play-state | name
+
+/* Dette gør det meget nemmere at arbejde med animationer, da man hurtigt kan se hvilke funktioner man skal ændre */
+/* --------------------------------------------------*/
+
