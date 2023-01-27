@@ -1,0 +1,1735 @@
+@import url("https://use.typekit.net/zaq3igd.css");
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+header {
+    padding: 1em 4vw;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: futura-pt, sans-serif;
+    flex-direction: column;
+}
+
+.globus {
+    display: none;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70%;
+    height: auto;
+    transition: ease-in-out .2s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 25px;
+    margin: 0.5em 0 0 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #3ab54b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 25px;
+}
+
+.nav-links a:hover {
+    color: #113f17;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#burger {
+    display: none;
+}
+
+#burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease; 
+}
+
+video {
+    position: absolute;
+    height: 700px;
+    top: 135px;
+    object-fit: cover;
+    width:100%;
+}
+
+.player-overlay {
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.video-overlay {
+    position: relative;
+    text-align: center;
+    margin: 1em 2em;
+    border-radius: 15px;
+}
+
+.video-overlay h1 {
+    position: relative;
+    color: white;
+    font-family: futura-pt, sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #000;
+}
+.video-overlay button {
+    background-color: white;
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    border-radius: 30px;
+    margin: 20px 0 10px 0;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    color: #000;
+    transition: ease-in-out .2s;
+}
+
+.video-overlay button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4em 0 10em 2em;
+}
+
+.intro h1 {
+    color: #191a17;
+    margin: 5px 0;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.intro h2 {
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    margin: 25px 0 2px 0;
+}
+
+.facts {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.space-desktop {
+    display: block;
+    width: 90%;
+}
+
+.space-mobile {
+    display: none;
+}
+
+.facts h1 {
+    font-family: futura-pt, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 40px 0;
+    font-size: 46px;
+}
+
+.facts p {
+    font-family: Domine, sans-serif;
+    color: #fff;
+    margin: 0.5em 1em;
+    text-align: center;
+    font-weight: normal;
+    font-size: 28px;
+    transition: ease-in-out .2s;
+}
+
+.facts p:hover {
+    transform: scale(1.3);
+    cursor: default;
+}
+
+.facts h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    font-size: 38px;
+    margin: 0.5em 0.5em;
+    text-align: center;
+    color: #fff;
+    transition: ease-in-out .2s;
+}
+
+.facts h2:hover {
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.facts h3 {
+    font-family: Domine, sans-serif;
+    font-size: 36px;
+    margin: 1em 0 0 0;
+    color: #fff;
+    text-align: center;
+    transition: ease-in-out .2s;
+}
+
+.facts h3:hover {
+    transform: scale(1.3);
+    cursor: default;
+}
+
+.facts h4 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 2em 2em 15px 2em;
+    text-align: center;
+    color: #fff;
+}
+
+.facts a {
+    background-color: #3ab54b;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin: 20px 0 30px 0;
+    transition: ease-in-out .2s;
+}
+
+.facts a:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.fn-mål {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fn-mål h1 {
+    color: #191a17;
+    margin: 40px 1em 20px 1em;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 46px;
+}
+
+.fn-mål button {
+    border: 0;
+    margin: 2em 0 2em 0;
+    background-color: #3ab54b;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    transition: ease-in-out .2s;
+}
+
+.fn-mål button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+.fn-mål h2 {
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 15px 2em 2px 2em;
+    transition: ease-in-out .2s;
+}
+
+.fn-mål h2:hover {
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.goal13-desktop {
+    width: 80%;
+    object-fit: contain;
+    display: inline;
+}
+
+.goal13-mobile {
+    display: none;
+}
+
+.nyhed {
+    background-color: #cad5d9;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nyhed h1 {
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    margin: 1em 2em 0.5em 2em;
+    text-align: center;
+    font-size: 40px;
+}
+
+.nyhed h2 {
+    text-align: center;
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    margin: 0 2em 1em 2em;
+}
+
+.nyhed br {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 1em 0;
+    width: 30%;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    border: 0;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin: 10px 0;
+}
+
+input[type=submit] {
+    background-color: #3ab54b !important;
+    color: white !important;
+    padding: 0.8em 3em !important;
+    font-size: 20px !important;
+    font-family: futura-pt, sans-serif !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    border-radius: 30px !important;
+    margin: 0.8em 0 !important;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+footer {
+    background-image: linear-gradient(rgba(0, 18, 68, 0.5),rgba(0, 18, 68, 0.5)),url(../img/iceberg2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.footer-links { 
+    display: flex;
+    margin: 2em 2em 4em 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links img {
+    width: 10%;
+    margin: 0 0 1em 0;
+}
+
+.footer-links h1 {
+    color: white;
+    font-family: futura-pt, sans-serif;
+    font-size: 25px;
+}
+
+.footer-links h2 {
+    color: #fff;
+    font-family: futura-pt, sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5em 0 0 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+    transition: ease-in-out .2s;
+}
+
+footer a:hover {
+    color: #3ab54b;
+    transform: scale(1.2);
+}
+
+.left-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.left-footer img {
+    width: 70%;
+    margin: 0 0 3.5em 0;
+}
+
+.right-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.right-footer h1 {
+    color: #fff;
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 4em 0;
+}
+
+.planet-intro {
+    background-color: #fff;
+}
+
+#txt {
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+    line-height: 30px;
+}
+
+#txt h1 {
+    margin: 5px 0 15px 0;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    padding: 0.5em 0 0 0;
+}
+
+#txt h2 {
+    margin: 1em 13.5em 0.5em 13.3em;
+    line-height: 50px;
+}
+
+#txt h4 {
+    margin: 2em 20em;
+}
+
+#txt h5 {
+    font-weight: normal;
+    margin: 0 24em;
+    color: rgb(107, 107, 107);
+}
+
+#txt p {
+    margin: 0 20em;
+}
+
+#txt a {
+    margin: 0 20em;
+}
+
+.flex-facts {
+    display: flex;
+    justify-content: center;
+}
+
+.facts-box {
+    width: 60%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin: 1em 0;
+}
+
+.facts-box h3 {
+    font-weight: normal;
+    margin: 1em 2em;
+}
+
+.facts-box li {
+    margin: 1em 1em;
+}
+
+.planet-image {
+    background-image: url(../img/planet-background2.jpg);
+    background-position: top center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.planet-image h1 {
+    color: #fff;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+}
+
+.planet-image h2 {
+    color: #fff;
+    font-family: Domine, sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0.5em 0 1em 0;
+}
+
+.earth-image {
+    background-image: url(../img/wildfire.jpg);
+    background-position: bottom center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.earth-image h1 {
+    color: #fff;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+}
+
+.earth-image h2 {
+    color: #fff;
+    font-family: Domine, sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0.5em 0 1em 0;
+}
+
+.accessibility {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 22em;
+}
+
+.accessibility h3 {
+    font-family: futura-pt, sans-serif;
+}
+
+.btn {
+    padding: 10px 10px;
+    background-color: lightgray;
+    color: #000;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: Domine, sans-serif;
+}
+
+.accessibility .btn.active {
+    background-color: #3ab54b;
+}
+
+.btn:hover {
+    background-color: #3ab54b;
+}
+
+.btn:nth-child(3) {
+    font-size: 1.5em;
+}
+
+.btn:nth-child(4) {
+    font-size: 2em;
+}
+
+.read-fn {
+    background-color: #cad5d9;
+    display: flex;
+    align-items: center;
+    margin: 2em 0 0 0;
+    flex-direction: column;
+}
+
+.read-fn h1 {
+    font-size: 36px;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    margin: 0.5em 0 0 0;
+    transition: ease-in-out .2s;
+}
+
+.read-fn h1:hover {
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.read-fn p {
+    margin: 0.5em 0 1em 0;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Domine, sans-serif;
+    transition: ease-in-out .2s;
+}
+
+.read-fn p:hover {
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.visiblePhone {
+    display: none;
+}
+
+.read-fn button {
+    border: 0;
+    margin: 0.5em 0 2em 0;
+    background-color: #3ab54b;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    transition: ease-in-out .2s;
+}
+
+.read-fn button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.bear-image {
+    background-image: url(../img/bear.jpg);
+    background-position: top center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 2em 0 0em 0;
+}
+
+.fn-image {
+    background-image: url(../img/fn.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.fn-work {
+    background-image: url(../img/fn-arbejde.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.about-site {
+    background-image: url(../img/about-site.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+
+.maal {
+    margin: 0 0 40px 0;
+}
+
+.delmaal {
+    margin: 0 20em;
+    display: grid;
+    grid-template-columns: 60px 100px 1fr;
+    border: 0;
+    font-family: Domine, sans-serif;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    border: solid 1px gray;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .2s;
+    background-color: #3e7d43;
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    border: solid 1px gray;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+.ione {
+    opacity: 0;
+    border: 0;
+}
+
+.itwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px gray;
+    font-style: italic;
+}
+
+.ithree {
+    display: flex;
+    align-items: center;
+    border: solid 1px gray;
+    padding: 10px 10px;
+}
+
+.climate-image {
+    background-image: url(../img/climate-crisis.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.startstop {
+    z-index: 2;
+    position: relative;
+    padding: 10px 1em;
+}
+
+.startstop p {
+    color: #fff;
+    font-family: Domine, sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px #000
+}
+
+.facts h4 {
+    transition: ease-in-out .2s;
+}
+
+.facts h4:hover {
+    transform: scale(1.2);
+    cursor: default;
+}
+
+@media screen 
+  and (min-device-width: 751px) 
+  and (max-device-width: 1200px) {
+
+    .nav-links {
+        width: 90%;
+        margin: 1em 0 0 0;
+    }
+
+    .nav-links a {
+        font-size: 30px;
+    }
+
+    .logo img {
+        width: 150%;
+    }
+
+    .accessibility {
+        padding: 10px 5em;
+    }
+
+    #txt h2 {
+        margin: 1em 2em 0.5em 2em;
+    }
+
+    #txt h4 {
+        margin: 2em 5em;
+    }
+
+    #txt p {
+        margin: 0em 5em;
+    }
+
+    #txt h5 {
+        margin: 1em 5em;
+    }
+
+    .delmaal {
+        margin: 0 5em;
+    }
+
+    .left-footer img {
+        width: 90%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin: 3em 0 0 0;
+    }
+
+    .footer-links h2, h1 {
+        text-align: center;
+    }
+
+    .footer-links img {
+        width: 25%;
+    }
+
+    .facts-box {
+        width: 85%;
+    }
+}
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+
+    video {
+        position: absolute;
+        height: 650px;
+        object-fit: cover;
+        width: 100%;
+        top: auto;
+    }
+    
+    .player-overlay {
+        display: flex;
+        height: 650px;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    
+    .video-overlay {
+        position: relative;
+        text-align: center;
+        margin: 1em 2em;
+        border-radius: 15px;
+    }
+    
+    .video-overlay h1 {
+        position: relative;
+        color: white;
+        font-family: futura-pt, sans-serif;
+        font-size: 45px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px #000;
+    }
+    .video-overlay button {
+        background-color: white;
+        border: 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 15px 50px;
+        border-radius: 30px;
+        margin: 20px 0 10px 0;
+        font-family: futura-pt, sans-serif;
+        font-weight: 600;
+        color: #000;
+        transition: ease-in-out .2s;
+    }
+    
+    .video-overlay button:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 3em 0 5em 2em;
+    }
+
+    #txt {
+        font-family: Domine, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0;
+        line-height: 30px;
+    }
+    
+    #txt h1 {
+        margin: 5px 0 15px 0;
+        font-family: futura-pt, sans-serif;
+        text-transform: uppercase;
+        font-size: 36px;
+        text-align: center;
+        padding: 0.5em 0 0 0;
+    }
+
+    #txt h2 {
+        margin: 1em 10em 0.5em 10em;
+    }
+    
+    #txt h4 {
+        margin: 2em 15em;
+    }
+    
+    #txt h5 {
+        font-weight: normal;
+        margin: 0 18em;
+        color: rgb(107, 107, 107);
+    }
+    
+    #txt p {
+        margin: 0 15em;
+    }
+    
+    #txt a {
+        margin: 0 15em;
+    }
+
+  }
+
+@media screen and (max-width: 750px) {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+header {
+    height: 3em;
+    padding: 0.5em 4vw;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.nav-links {
+    position: absolute;
+    right: 0px;
+    height: 8.5em;
+    top: 48px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    font-family: futura-pt, sans-serif;
+    font-size: 25px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links li {
+    opacity: 0;
+    margin: 10px 0;
+}
+
+#burger {
+    display: block;
+}
+
+#burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #3ab54b;
+    margin: 5px;
+    transition: all 0.3s ease; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    transition: ease-in-out .2s;
+}
+
+i {
+    font-size: 23px;
+    color: #3ab54b;
+    width: 35px;
+    text-align: center;
+}
+
+video {
+    position: absolute;
+    height: 530px;
+    object-fit: cover;
+    width: 100%;
+    top: auto;
+}
+
+.player-overlay {
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.video-overlay {
+    position: relative;
+    text-align: center;
+    margin: 1em 2em;
+    border-radius: 15px;
+}
+
+.video-overlay h1 {
+    position: relative;
+    color: white;
+    font-family: futura-pt, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #000;
+}
+.video-overlay button {
+    background-color: white;
+    border: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    border-radius: 30px;
+    margin: 20px 0 10px 0;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3.5em 2em;
+}
+
+.intro h1 {
+    color: #191a17;
+    margin: 5px 0;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.intro h2 {
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 15px 0 2px 0;
+}
+
+.facts {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facts h1 {
+    font-family: futura-pt, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.space-desktop {
+    display: none;
+}
+
+.space-mobile {
+    width: 100%;
+    display: block;
+}
+
+.facts p {
+    font-family: Domine, sans-serif;
+    color: #fff;
+    margin: 0.5em 1em;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.facts h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    margin: 0.5em 0.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.facts h3 {
+    font-family: Domine, sans-serif;
+    font-size: 25px;
+    margin: 1em 0 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+.facts h4 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 2em 2em 15px 2em;
+    text-align: center;
+    color: #fff;
+}
+
+.facts a {
+    background-color: #3ab54b;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin: 0 0 30px 0;
+}
+
+.fn-mål {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fn-mål h1 {
+    color: #191a17;
+    margin: 2em 1em 20px 1em;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.goal13-desktop {
+    width: 80%;
+    object-fit: contain;
+    display: none;
+}
+
+.goal13-mobile {
+    display: block;
+    width: 100%;
+}
+
+.fn-mål button {
+    border: 0;
+    margin: 2em 0 2em 0;
+    background-color: #3ab54b;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+
+.fn-mål h2 {
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 15px 2em 2px 2em;
+}
+
+.nyhed {
+    background-color: #cad5d9;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nyhed h1 {
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    margin: 1em 2em 0.5em 2em;
+    text-align: center;
+    font-size: 25px;
+}
+
+.nyhed h2 {
+    text-align: center;
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0 2em 1em 2em;
+}
+
+.nyhed br {
+    display: inline;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 1em 0;
+    width: 70%;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    border: 0;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 12px;
+    margin: 5px 0;
+}
+
+input[type=submit] {
+    background-color: #3ab54b !important;
+    color: white !important;
+    padding: 0.8em 3em !important;
+    font-size: 18px !important;
+    font-family: futura-pt, sans-serif !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    border-radius: 30px !important;
+    margin: 0.8em 0 !important;
+}
+
+.nav-links a {
+    color: #3ab54b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-active {
+    transform: translateX(0%);
+    z-index: 2;
+}
+
+footer {
+    background-image: linear-gradient(rgba(0, 18, 68, 0.5),rgba(0, 18, 68, 0.5)),url(../img/iceberg2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img {
+    width: 40%;
+    margin: 2em 0 10px 0;
+}
+
+.footer-links { 
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1em 0;
+}
+
+.left-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.left-footer img {
+    margin: 2em 0 2em 0;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links img {
+    display: none;
+}
+
+.footer-links h1 {
+    font-size: 22px;
+}
+
+.footer-links h2 {
+    font-size: 20px;
+    margin: 5px 1.5em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 0 0;
+}
+
+.links a {
+    font-size: 25px;
+}
+
+.right-footer h1 {
+    margin: 1em 0 2em 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: futura-pt, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.designed-by, .designed-by h1 {
+    color: #fff;
+    font-family: futura-pt, sans-serif;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.designed-by h1 {
+    padding: 10px 20px;
+}
+
+.planet-intro {
+    background-color: #fff;
+}
+
+#txt {
+    font-family: Domine, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+    line-height: 30px;
+}
+
+#txt h1 {
+    margin: 5px 0 15px 0;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 27px;
+    text-align: center;
+    padding: 0.5em 0 0 0;
+}
+
+#txt h4 {
+    margin: 2em 1em;
+}
+
+#txt h5 {
+    font-weight: normal;
+    margin: 0 1em;
+    color: rgb(107, 107, 107);
+}
+
+#txt h2 {
+    margin: 0.5em 0.7em 1em 0.7em;
+    font-size: 25px;
+}
+
+#txt h3 {
+    margin: 0.5em 1em;
+}
+
+#txt p {
+    margin: 0 1em;
+}
+
+#txt a {
+    margin: 0 1em;
+}
+
+.flex-facts {
+    display: flex;
+    justify-content: center;
+}
+
+.facts-box {
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin: 1em 0;
+}
+
+.facts-box h2 {
+    line-height: 50px;
+}
+
+.facts-box h3 {
+    font-weight: normal;
+    margin: 1em 10px;
+}
+
+.facts-box li {
+    margin: 1em 1em;
+}
+
+.planet-image {
+    background-image: url(../img/planet-background2.jpg);
+    background-position: top center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: local;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.planet-image h2 {
+    margin: 0.5em 2em 1em 2em;
+}
+
+.earth-image {
+    background-image: url(../img/wildfire.jpg);
+    background-position: bottom center;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: local;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.earth-image h1 {
+    color: #fff;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+}
+
+.earth-image h2 {
+    color: #fff;
+    font-family: Domine, sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0.5em 0 1em 0;
+}
+
+.accessibility {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.accessibility h3 {
+    font-family: futura-pt, sans-serif;
+}
+
+.btn {
+    padding: 10px 10px;
+    background-color: lightgray;
+    color: #000;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: Domine, sans-serif;
+}
+
+.accessibility .btn.active {
+    background-color: #3ab54b;
+}
+
+.btn:hover {
+    background-color: #3ab54b;
+}
+
+.btn:nth-child(3) {
+    font-size: 1.5em;
+}
+
+.btn:nth-child(4) {
+    font-size: 2em;
+}
+
+.read-fn {
+    background-color: #cad5d9;
+    display: flex;
+    align-items: center;
+    margin: 2em 0 0 0;
+    flex-direction: column;
+}
+
+.read-fn h1 {
+    font-size: 27px;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    margin: 0.5em 0 0 0;
+    transition: ease-in-out .2s;
+    text-align: center;
+}
+
+.read-fn p {
+    margin: 0.5em 0 1em 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Domine, sans-serif;
+    transition: ease-in-out .2s;
+    padding: 15px 0;
+}
+
+.read-fn button {
+    font-size: 14px;
+}
+
+.visiblePhone {
+    display: inline;
+}
+
+.bear-image {
+    background-image: url(../img/bear.jpg);
+    background-position: center right -100px;
+    background-size: cover; 
+    height: 400px;
+    background-attachment: local;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 2em 0 0 0;
+}
+
+.fn-image {
+    background-image: url(../img/fn.jpg);
+    background-position: 800px bottom;
+    background-size: cover; 
+    height: 400px;
+    background-attachment: local;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.fn-work {
+    background-image: url(../img/fn-arbejde.jpg);
+    background-position: 800px bottom;
+    background-size: cover; 
+    height: 400px;
+    background-attachment: local;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.maal {
+    margin: 0 0 40px 0;
+}
+
+.delmaal {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    font-family: Domine, sans-serif;
+    flex-wrap: wrap;
+}
+
+.one {
+    padding: 0 5px;
+}
+
+.itwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px gray;
+    font-style: italic;
+    margin: 20px 0 0 0;
+    padding: 5px 10px;
+}
+
+.ithree {
+    display: flex;
+    align-items: center;
+    border: solid 1px gray;
+    padding: 10px 10px;
+}
+
+.climate-image {
+    background-image: url(../img/climate-crisis.jpg);
+    background-size: cover; 
+    height: 400px;
+    background-attachment: local;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

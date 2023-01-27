@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo-small.png">
+    <title>Verdensmål 13 | Forside</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4JXDEKQX9M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4JXDEKQX9M');
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="verdensmål logo"></a>
+            <ul class="nav-links">
+                <li>
+                  <a href="index.html">Forside</a>
+                </li>
+                <li>
+                  <a href="planet.html">Vores Klimaindsats</a>
+                </li>
+                <li>
+                  <a href="fn.html">Verdensmål 13</a>
+                </li>
+                <li>
+                  <a href="about.html">Om FN</a>
+                </li>
+            </ul>
+            <div id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="player-overlay">
+            <video autoplay loop muted playsinline onclick="this.paused ? this.play() : this.pause();">
+                <source src="vid/movie.mp4" type="video/mp4" />
+                <source src="vid/movie.webm" type="video/webm" />
+                <source src="vid/movie.ogg" type="video/ogg" />
+                <p>Video af natursteder på vores planet samt klimaforandringer og industri</p>
+            </video>
+            <div class="video-overlay">
+                <h1>Vi skal kunne forstå vores planet</h1>
+                <a href="planet.html"><button>Læs mere</button></a>
+            </div>
+            <div class="startstop">
+                <p>Klik på videoen for at starte/stoppe</p>
+            </div>
+        </div>
+    </section>
+    <section class="intro">
+        <div>
+            <h1>Fremtidens klima og natur er afhængig af handling </h1>
+            <h2>Handling, som skal foretages nu</h2>
+            <hr>
+        </div>
+    </section>
+    <section class="facts">
+        <h1>Jordens klimaudvikling</h1>
+        <img class="space-desktop" src="img/space-desktop.jpg" alt="En orkan set fra rummet">
+        <img class="space-mobile" src="img/space-mobile.jpg" alt="En orkan set fra rummet">
+        <h2>Vores atmosfære tager imod store mængder CO2</h2>
+        <h3>98.7 millioner ton CO2</h3>
+        <p>Hver dag</p>
+        <h3>2.9 milliarder ton CO2</h3>
+        <p>Hver måned</p>
+        <h3>35 milliarder ton CO2</h3>
+        <p>Hvert år</p>
+        <h4>Hvordan forhindrer vi større CO2 udslip i fremtiden?</h4>
+        <a href="planet.html">Udforsk nu</a>
+    </section>
+    <section class="fn-mål">
+        <div>
+            <h1>FN's 13 verdensmål omhandler klimaindsats</h1>
+            <img class="goal13-desktop" src="img/goal13-desktop.jpg" alt="Hjemmesidens logo over nogle bjerge med is på toppen">
+            <img class="goal13-mobile" src="img/goal13-mobile.jpg" alt="Hjemmesidens logo over nogle bjerge med is på toppen">
+            <h2>Målet er ét ud af 17 verdensmål, som FN har lavet for at sikre bæredygtig udvikling</h2>
+            <a href="fn.html"><button>Udforsk verdensmål 13</button></a>
+        </div>
+    </section>
+    <section>
+        <div class="nyhed">
+            <h1>Tilmeld dig vores nyhedsbrev om verdensmål 13</h1>
+            <h2>Sammen kan vi bygge <br> den verden, vi ønsker.</h2>
+            <form>
+                <label class="visually-hidden" for="navn">Navn</label>
+                <input placeholder="Navn*" id="navn" type="text" required>
+                <label class="visually-hidden" for="mail">E-mail</label>
+                <input placeholder="E-mail*" id="mail" type="email" required>
+                <input type="submit" name="submit" value="Tilmeld" onclick="myFunction()">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="left-footer">
+        <img src="img/logo.png" class="logo-mid" alt="logo med skrift"></a>
+        </div>
+        <div class="footer-links">
+            <img src="img/logo-small.png" alt="logo lille uden skrift">
+            <h1>Denne side er et projekt som omhandler webtilgængelighed</h1>
+            <h2>Siden er derfor kun til uddannelsesmæssige formål. </h2>
+            <div class="links">
+                <a href="index.html">Forside</a>
+                <a href="planet.html">Klimaindsats</a>
+                <a href="fn.html">Verdensmål 13</a>
+                <a href="about.html">Om FN</a>
+            </div>
+        </div>
+        <div class="right-footer"><h1>Udviklet af Andreas Skovsted Kristiansen</h1></div>
+    </footer>
+    <script src="script/script.js"></script> 
+</body>
+</html>
